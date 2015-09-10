@@ -1,0 +1,15 @@
+{
+  "name": "upcourse",
+  "version": "1.0.0",
+  "description": "This is a simple frontend course for the people of UP(Unge Programmøre)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stenkilde/UP_fe.git"
+  },
+  "author": "<Oliver Stenkilde>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stenkilde/UP_fe/issues"
+  },
+  "homepage": "https://github.com/Stenkilde/UP_fe#readme"
+}

@@ -1,0 +1,4 @@
+node_modules
+app/libs
+.DS_STORE
+/.idea
