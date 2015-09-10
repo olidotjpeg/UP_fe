@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $primary-bg;
+}
+
+.sidebar, .topbar, .main {
+	float: left;
+}
+
+.main, .topbar {
+	@media #{$medium-up} {
+		margin-left: 20%;
+	}
+}
+
+.main {
+	width: 100%;
+	padding-top: $topbar-height;
+	padding-bottom: $topbar-height; 
+	background-color: $primary-bg;
+	@media #{$large-up} {
+		width: 80%;
+		max-width: 80%;
+	}
+	overflow: hidden;
+}
+
+// Collapsed classes are made to control padding on columns, however they can be used on all elements and tags.
+/**
+  * USE WITH CAUTION, !IMPORTANT HAVE BEEN ADDED
+  */
+
+.collapsed {
+	padding: 0 !important;
+}
+
+.l-collapsed {
+	padding-left: 0 !important;
+}
+
+.r-collapsed {
+	padding-right: 0 !important; 
+}
+
+// Here comes clearfixes
+
+@mixin clearfix {
+	&:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+}
+
+.row {
+	@include clearfix();
+	margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+
+.fluid-row {
+	@extend .row;
+	max-width: 100%;
+}
+
+.newsletter {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+	padding-top: 10px;
+}	
+
+.mobile-menu {
+	position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 110;
+	@media #{$large-up} {
+		display: none;
+	}
+}

@@ -1,0 +1,43 @@
+.sidebar {
+	width: 100vw;
+	height: 100%;
+	background: #a9b7be;
+	text-align: center;
+	position: fixed;
+	transform: translateX(-100%);
+	z-index: 100;
+	
+	transition: transform .3s ease-in-out;
+
+	@media #{$large-up} {
+		transform: translateX(0);
+		width: 20%;
+	}
+	&__navigation {
+		margin: 0;
+		padding: 10px 0 0;
+		list-style-type: none;
+		li {
+			text-align: left;
+			height: 50px;
+			line-height: 50px;
+			background: #3f434a;
+			padding-left: 10px;
+			border-bottom: #fff solid 1px;
+			transition: padding .3s ease-in-out;
+			&:last-child {
+				border: none;
+			}
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+			&:hover {
+				padding-left: 20px;
+			} 
+		}
+	}
+	&.open {
+		transform: translateX(0);
+	}
+}

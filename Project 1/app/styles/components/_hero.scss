@@ -1,0 +1,50 @@
+.hero {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+
+	&__img {
+		position: absolute;
+		top: 0; 
+		height: 300px;
+		z-index: 1;
+		img {
+			height: 300px;
+		}
+
+		@media #{$medium-up} {
+			height: auto;
+			img {
+				height: auto;
+			}
+		}
+	}
+	
+	@media #{$large-up} {
+		height: 483px;
+	}
+	&__title {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		z-index: 2;
+		h2 {
+			margin: 0;
+			color: #fff;
+			font-size: 40px;
+			@media #{$large-up} {
+				font-size: 70px;
+			}
+		}
+		* {
+			/**
+			  * Styling on * is really dangerous, there for we make it really specific on what * we are styling
+			  * This * is to make sure several elements will gain the styling required for background, and needed
+			  * margin to enslave the design properly.
+			  */
+			background-color: rgba(0, 0, 0, .4);
+			padding: 10px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+<nav>
+    <img src="assets/images/logo.png" alt="">
+    <ul class="sidebar__navigation">
+        <li><a ui-sref="application.main">Centeret</a></li>
+        <li><a ui-sref="application.membership">Medlemsskab</a></li>
+        <li><a ui-sref="application.team">Hold</a></li>
+        <li><a ui-sref="application.404">Tider</a></li>
+        <li><a ui-sref="application.404">Om Always Fit</a></li>
+        <li><a ui-sref="application.404">Spørgsmål</a></li>
+        <li><a ng-click="sidebar.showLetter()">Nyhedsbrev</a></li>
+    </ul>
+</nav>
+
+<div ng-show="sidebar.newsletter" class="newsletter">
+	<form ng-submit="sidebar.sendLetter()">
+		<label class="small-12 columns">
+			Navn: 
+			<input ng-model="sidebar.name" type="text">
+		</label>
+		<br>
+		<br>
+		<label class="small-12 columns">
+			Email: 
+			<input ng-model="sidebar.email" type="email">
+		</label>
+		<input class="button" type="submit" Value="Tilmeld!">
+	</form>
+</div>

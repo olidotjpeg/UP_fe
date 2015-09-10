@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>UP FE Course</title>
-</head>
-<body>
-	<h1>Welcome to UP Frontend Course</h1>
-	<div ui-view="applicaton"></div>
+<html lang="en" ng-app="kartoffelskralder">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Kartoffelskralder</title>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
 
-	<script src="libs/angular/angular.min.js"></script>
-	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="config/config.js"></script>
-</body>
+		<div ui-view="application"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+		<script src="config/config.js"></script>
+		<script src="models/newsletter.factory.js"></script>
+		<script src="modules/_application/application.route.js"></script>
+		<script src="modules/_application/application.controller.js"></script>
+		<script src="modules/shared/sidebar/sidebar.controller.js"></script>
+		<script src="modules/shared/topbar/topbar.controller.js"></script>
+		<script src="modules/main/main.route.js"></script>
+		<script src="modules/main/index/index.controller.js"></script>
+		<script src="modules/membership/membership.route.js"></script>
+		<script src="modules/membership/index/membership.controller.js"></script>
+		<script src="modules/team/team.route.js"></script>
+		<script src="modules/team/index/team.controller.js"></script>
+		<script src="modules/errors/error.route.js"></script>
+		<script src="modules/errors/404/notfound.controller.js"></script>
+	</body>
 </html>

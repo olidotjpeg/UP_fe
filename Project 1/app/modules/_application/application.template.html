@@ -1,1 +1,4 @@
-<div ui-view="main"></div>
+<a class="mobile-menu" ng-click="application.openSidebar()">Menu</a>
+<div class="topbar" ui-view="topbar"></div>
+<div ng-class="{'open': application.sideBarState}" class="sidebar" ui-view="sidebar"></div>
+<div class="main" ui-view="main"></div>
