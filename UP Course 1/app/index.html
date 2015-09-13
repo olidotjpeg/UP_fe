@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="upCourse">
+<head>
+	<meta charset="UTF-8">
+	<title>UP Kursus FE</title>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<div ui-view="application"></div>
+	
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<script src="config/config.js"></script>
+	<script src="models/user.factory.js"></script>
+	<script src="modules/_application/application.route.js"></script>
+	<script src="modules/shared/topbar/topbar.controller.js"></script>
+	<script src="modules/shared/sidebar/sidebar.controller.js"></script>
+	<script src="modules/main/main.route.js"></script>
+	<script src="modules/main/main.controller.js"></script>
+	<script src="modules/member/member.route.js"></script>
+	<script src="modules/member/member.controller.js"></script>
+<!--	<script src="modules/team/team.route.js"></script>
+	<script src="modules/team/team.controller.js"></script>-->
+</body>
+</html>

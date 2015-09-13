@@ -1,0 +1,10 @@
+{
+  "name": "UP Course 1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Stenkilde/UP_fe",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
+    "foundation": "~5.5.2"
+  }
+}
